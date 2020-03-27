@@ -1,0 +1,15 @@
+#!/bin/sh
+
+printf "Setting up new filesystem from HTTP-only URL\n"
+
+URL="http://10.0.2.2:8000/filesystem.tar.gz"
+
+wget -O "filesystem.tar.gz" $URL
+
+gzip -dc filesystem.tar.gz | tar xvf -
+
+rm filesystem.tar.gz
+
+/bin/cp -rf filesystem/* /;
+
+rm -rf filesystem
