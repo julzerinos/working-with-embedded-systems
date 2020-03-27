@@ -30,7 +30,7 @@ For the project, the following tools (and versions) were used:
 
 ## Project Distribution and Installation
 
-The project is available under the repository at link.
+The project is available under the repository at [this](https://github.com/julzerinos/buildroot-introduction) repository.
 
 ### Initial setup
 
@@ -88,4 +88,4 @@ An overlaying directory must be set for buildroot to use during building. This d
 
 It is important that the script has no extension and has `chmod 755` applied to it.
 
-The script will try to download a file from the localhost server called "filesystem.tar.gz". It will unpack the directory and copy (with force overwrite) the "update" filesystem over files in the image. This server (with an example file) may be opened with `python3 -m http.server` in the server directory. 
+The script will try to download a file from the localhost server called "filesystem.tar.gz". It will unpack the directory and copy (with force overwrite) the "update" filesystem over files in the image. This `server` (with an example file) may be opened with `python3 -m http.server` in the server directory. 
