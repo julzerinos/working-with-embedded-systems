@@ -1,9 +1,5 @@
 # Introductory Project to Buildroot
 
-## Linux in Embedded Systems
-
-### Julian Szachowicz
-
 ## Introduction
 
 ### Project Requirements
@@ -26,8 +22,6 @@ For the project, the following tools (and versions) were used:
  * Python 3.7
 
 ## Project Distribution and Installation
-
-The project is available under the repository at [this](https://github.com/julzerinos/buildroot-introduction) repository.
 
 ### Initial setup
 
