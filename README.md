@@ -13,13 +13,10 @@ The requirements are as follows:
  1. Vex9 should automatically connect to the network, using DHCP to obtain the network parameters.
 Disconnection of the cable should shut down the network connection.
 Connection of the cable should reconnect the network.
-(In QEMU you may control the network in the monitor mode, using the "set_link DEVICE_NAME on/off" command.
-You may enter/exit the monitor mode with "CTRL+a c". The device name is reported by "info network".)
- 2. The system host name should be set to: "firstname_lastname" of the
-student (or "lastname1_lastname2" in case of a 2-person team).
+ 2. The system host name should be set to: "firstname_lastname" of the user.
  3. When the Internet connection is established, the system clock should be
 synchronized with an NTP server (preferably using the "NTP server pool")
- 4. Please add the shell script that after the start of the system tries to download fron certain URL update.tar.gz file and unpacks it overwriting the filesystem
+ 4. Add the shell script that after the start of the system tries to download fron certain URL update.tar.gz file and unpacks it overwriting the filesystem
 
 ### Project tools
 
