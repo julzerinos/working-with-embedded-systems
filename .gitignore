@@ -3,3 +3,5 @@ buildroot-2020.02/
 .venv/
 .buildroot-ccache/
 */.buildroot-ccache/
+
+.vscode
