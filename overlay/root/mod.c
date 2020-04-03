@@ -96,7 +96,7 @@ int main(int argc, char *argv[])
       // Use array of boolean ints to set led states
       gpiod_line_set_value_bulk(&led_bulk, led_setup);
 
-      printf("Game value set to [ %i ]-\n", game_value);
+      printf("Game value set to [ %i ]\n", game_value);
       is_value_set = 1;
     }
 

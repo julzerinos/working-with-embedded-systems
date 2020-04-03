@@ -1,3 +1,5 @@
 buildroot-2020.02/
 *.tar.bz2
-
+.venv/
+.buildroot-ccache/
+*/.buildroot-ccache/

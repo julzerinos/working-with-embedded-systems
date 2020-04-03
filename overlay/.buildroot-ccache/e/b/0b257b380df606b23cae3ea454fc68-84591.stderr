@@ -1,5 +1,0 @@
-mod.c: In function ‘main’:
-mod.c:29:5: warning: implicit declaration of function ‘print’; did you mean ‘printf’? [-Wimplicit-function-declaration]
-   29 |     print("Yeet1\n");
-      |     ^~~~~
-      |     printf
