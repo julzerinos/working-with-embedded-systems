@@ -1,0 +1,10 @@
+mod.c: In function ‘main’:
+mod.c:77:63: warning: passing argument 2 of ‘gpiod_chip_get_line’ makes integer from pointer without a cast [-Wint-conversion]
+   77 |       printf("%i", gpiod_chip_get_line(chip, event_bulk->lines[j]));
+      |                                              ~~~~~~~~~~~~~~~~~^~~
+      |                                                               |
+      |                                                               struct gpiod_line *
+In file included from mod.c:4:
+../../buildroot-2020.02/output/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/gpiod.h:473:1: note: expected ‘unsigned int’ but argument is of type ‘struct gpiod_line *’
+  473 | gpiod_chip_get_line(struct gpiod_chip *chip, unsigned int offset) GPIOD_API;
+      | ^~~~~~~~~~~~~~~~~~~

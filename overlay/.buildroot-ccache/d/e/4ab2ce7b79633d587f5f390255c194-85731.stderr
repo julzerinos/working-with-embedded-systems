@@ -1,0 +1,4 @@
+mod.c: In function ‘main’:
+mod.c:91:5: warning: implicit declaration of function ‘sleep’ [-Wimplicit-function-declaration]
+   91 |     sleep(0.5);
+      |     ^~~~~

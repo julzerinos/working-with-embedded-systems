@@ -1,0 +1,9 @@
+mod.c: In function ‘main’:
+mod.c:35:39: warning: initialization of ‘const struct timespec *’ from ‘int’ makes pointer from integer without a cast [-Wint-conversion]
+   35 |   const struct timespec * timeout = { 1, 0 };
+      |                                       ^
+mod.c:35:39: note: (near initialization for ‘timeout’)
+mod.c:35:42: warning: excess elements in scalar initializer
+   35 |   const struct timespec * timeout = { 1, 0 };
+      |                                          ^
+mod.c:35:42: note: (near initialization for ‘timeout’)

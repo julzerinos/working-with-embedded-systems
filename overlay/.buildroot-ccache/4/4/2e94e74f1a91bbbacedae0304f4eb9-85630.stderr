@@ -1,0 +1,10 @@
+mod.c: In function ‘main’:
+mod.c:49:34: warning: passing argument 1 of ‘gpiod_line_request_bulk_output’ from incompatible pointer type [-Wincompatible-pointer-types]
+   49 |   gpiod_line_request_bulk_output(&switch_offsets, "led", 0);
+      |                                  ^~~~~~~~~~~~~~~
+      |                                  |
+      |                                  unsigned int (*)[12]
+In file included from mod.c:4:
+../../buildroot-2020.02/output/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/gpiod.h:951:60: note: expected ‘struct gpiod_line_bulk *’ but argument is of type ‘unsigned int (*)[12]’
+  951 | int gpiod_line_request_bulk_output(struct gpiod_line_bulk *bulk,
+      |                                    ~~~~~~~~~~~~~~~~~~~~~~~~^~~~

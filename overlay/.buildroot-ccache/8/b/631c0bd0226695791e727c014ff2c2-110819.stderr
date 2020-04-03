@@ -1,0 +1,10 @@
+mod.c: In function ‘main’:
+mod.c:93:48: warning: passing argument 2 of ‘gpiod_line_event_read’ from incompatible pointer type [-Wincompatible-pointer-types]
+   93 |     gpiod_line_event_read(event_bulk.lines[0], &last_event);
+      |                                                ^~~~~~~~~~~
+      |                                                |
+      |                                                struct gpiod_line_event **
+In file included from mod.c:5:
+../../buildroot-2020.02/output/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/gpiod.h:1180:31: note: expected ‘struct gpiod_line_event *’ but argument is of type ‘struct gpiod_line_event **’
+ 1180 |      struct gpiod_line_event *event) GPIOD_API;
+      |      ~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~

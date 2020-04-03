@@ -1,0 +1,10 @@
+mod.c: In function ‘main’:
+mod.c:52:28: warning: passing argument 1 of ‘gpiod_line_request_input’ from incompatible pointer type [-Wincompatible-pointer-types]
+   52 |   gpiod_line_request_input(&switch_bulk, "switch");
+      |                            ^~~~~~~~~~~~
+      |                            |
+      |                            struct gpiod_line_bulk *
+In file included from mod.c:5:
+../../buildroot-2020.02/output/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/gpiod.h:823:49: note: expected ‘struct gpiod_line *’ but argument is of type ‘struct gpiod_line_bulk *’
+  823 | int gpiod_line_request_input(struct gpiod_line *line,
+      |                              ~~~~~~~~~~~~~~~~~~~^~~~

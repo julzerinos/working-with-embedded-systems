@@ -1,0 +1,7 @@
+if [ -z ${BRPATH+x} ]; then echo "BRPATH is unset. Set it to the path where Buildroot is unpacked and your system is built!"; else 
+(
+	export PATH=$BRPATH/output/host/usr/bin:$PATH
+	make ARCH=arm CROSS_COMPILE=arm-none-linux-gnueabihf- mod
+	#make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- mod
+)
+fi
