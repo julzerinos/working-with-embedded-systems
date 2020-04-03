@@ -5,3 +5,5 @@ buildroot-2020.02/
 */.buildroot-ccache/
 
 .vscode
+
+*.pdf
