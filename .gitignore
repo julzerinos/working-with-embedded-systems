@@ -7,3 +7,4 @@ boot.scr
 *.dtb
 zImage_user
 
+*.pdf

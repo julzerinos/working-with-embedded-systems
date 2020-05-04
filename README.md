@@ -1,9 +1,5 @@
 # Buildroot dual admin/server ecosystem example
 
-### Linux in Embedded Systems
-
-**Julian Szachowicz**
-
 ## Introduction
 
 ### Project Requirements
@@ -55,10 +51,6 @@ The project utilizes the following tools:
 * Virtualenv
 
 ## Project Distribution and Installation
-
-The project is available at [this]() repository.
-
-The prepared buildroot image is available [here](). Please note this will most likely be unavailable after June 2020.
 
 ### Initial setup
 
