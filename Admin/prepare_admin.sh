@@ -1,7 +1,7 @@
 #!/bin/bash
 (
   cd user_img
-  ./boot_lab3.sh
+  ./boot_script.sh
 )
 
 BR_NAME=buildroot-2020.02
