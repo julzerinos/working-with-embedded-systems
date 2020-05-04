@@ -1,2 +1,9 @@
 buildroot*/
 .venv/
+*.tar.bz2
+
+boot.scr
+*.ext4
+*.dtb
+zImage_user
+
