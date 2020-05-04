@@ -2,9 +2,10 @@
 #!/bin/bash
 
 source .venv/bin/activate
-python GUI/gui2.py &
+python GUI/gui3.py > /dev/null 2>&1  &
+python --version
+PID=$!
 
-sleep 2
 
 (
   cd buildroot-2020.02
@@ -16,3 +17,5 @@ sleep 2
     -sd output/images/sdcard.img \
     -device virtio-rng-device
 )
+
+kill -9 $PID

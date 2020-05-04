@@ -1,4 +1,9 @@
 #!/bin/bash
+(
+  cd user_img
+  ./boot_lab3.sh
+)
+
 BR_NAME=buildroot-2020.02
 BR_FILE=${BR_NAME}.tar.bz2
 BR_DL=../${BR_FILE}
@@ -18,11 +23,6 @@ for i in ../patches/*; do
 done
 make
 
-virtualenv .venv
+virtualenv -p python3 .venv
 source .venv/bin/activate
 pip install -r requirements.txt
-
-(
-  cd user_img
-  ./boot_lab3.sh
-)
