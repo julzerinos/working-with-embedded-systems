@@ -110,6 +110,8 @@ Access credentials for both systems: `root` with no password.
 
 The utility system boots a simple HTTP file server on localhost port 8810. This port is forwarded to the host via port 8888 and may be accessed on the host system with `localhost:8888`. Please note that the server has not been tested and updating files may potentially alter the Utility system.
 
+The file server is authentication-protected with the credentials `admin/password`.
+
 ### Admin Systems
 
 The admin system may influence the partitions of the utility system.
