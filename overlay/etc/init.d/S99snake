@@ -1,0 +1,9 @@
+#!/bin/sh
+
+# Limites access to snake only
+# To disable, comment below lines out and make the buildroot again
+
+clear
+
+cd /usr/bin/snake
+/usr/bin/python3 snake.py
