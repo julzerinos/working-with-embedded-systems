@@ -1,0 +1,50 @@
+
+printf "Setting up network connection...\n"
+
+uci delete network.lan
+uci set network.lan=interface
+uci set network.lan.ifname='eth0'
+uci set network.lan.proto='dhcp'
+uci commit
+/etc/init.d/network restart
+
+printf "Downloading packages from host..."
+wget http://10.0.2.2:8000/kmod-drv-mpc8xxx_4.14.171-1_aarch64_generic.ipk
+opkg install kmod-drv-mpc8xxx_4.14.171-1_aarch64_generic.ipk 
+
+printf "Installing OPKG packages...\n"
+
+opkg update
+opkg install libgpiod
+opkg install gpiod-tools
+
+opkg install python3
+opkg install python3-pip
+
+opkg install git-http
+
+opkg install alsa-utils
+opkg install pciutils
+opkg install kmod-sound-hda-intel
+alsactl init
+opkg install mpd-full
+opkg install mpc
+
+/etc/init.d/mpd restart
+
+printf "Installing python packages with pip...\n"
+
+pip3 install gpiod
+pip3 install python-mpd2
+
+printf "Setting gpiochip detection...\n"
+
+modprobe gpio-mpc8xxx
+
+printf "Cloning Snake game...\n"
+
+git clone --single-branch --branch just-snake-openwrt https://github.com/julzerinos/buildroot-snake.git
+
+printf "Setup complete, run the Snake game with\n"
+printf "   $ python3 buildroot-snake/snake.py\n"
+printf "Enjoy :)"
