@@ -1,9 +1,5 @@
 # OpenWRT as a graphical interface for the Snake Game
 
-### Linux in Embedded Systems
-
-**Julian Szachowicz**
-
 ## Introduction
 
 ### Project Requirements
@@ -34,9 +30,6 @@ The above are fulfilled with the following toolset:
 
 
 ## Project Distribution and Installation
-
-The project is availble at [this]() repository.
-
 
 ### Initial Setup
 
