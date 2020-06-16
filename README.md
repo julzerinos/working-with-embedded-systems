@@ -95,7 +95,11 @@ opnwrt-snake
 
   4. If the steps have been completed correctly, the image may be accessed with `./runme2`.
 
-  5. Once the image starts, finalize the installation with the `openwrt_setup` script by either copying it or cloning it from the repository.
+  5. Once the image starts, finalize the installation with the `openwrt_setup` script by either copying it or cloning it from the repository with
+
+```sh
+git clone --single-branch --branch just-setup https://github.com/julzerinos/openwrt-snake.git
+```
 
 ## Project Overview
 
