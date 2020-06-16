@@ -1,0 +1,13 @@
+BR_config
+buildroot-2020.02*
+build.sh
+kernel.conf
+*.bz2
+openwrt*
+overlay
+patches
+root.ext4
+run_before
+runme
+.venv
+W8
